@@ -27,4 +27,13 @@ public class UserServiceImplementation implements UserService {
 
         return usernmae;
     }
+
+    @Override
+    public void deleteUser(String id) {
+        userRepo.deleteById(id);
+    }
+
+
+
+
 }
