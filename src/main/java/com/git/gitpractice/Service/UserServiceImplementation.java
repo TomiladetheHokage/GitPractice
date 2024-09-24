@@ -42,7 +42,10 @@ public class UserServiceImplementation implements UserService {
     public void deleteUser(String id) {
         userRepo.deleteById(id);
     }
-
+    @Override
+    public String iDunTire(String id){
+        return id + " iDunTire";
+    }
 
 
 
