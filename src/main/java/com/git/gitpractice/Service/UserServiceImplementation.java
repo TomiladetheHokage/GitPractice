@@ -29,9 +29,34 @@ public class UserServiceImplementation implements UserService {
     }
 
 
+
     public String login2(String usernmae, String password) {
         User user = new User();
         if(usernmae.equals(user.getName()) && password.equals(user.getPassword()))return "u logged in sha";
         return usernmae;
     }
+
+    @Override
+
+    public String dance(String name){
+        return name + "is dance";
+    }
+    @Override
+    public String swim(String name){
+        return name + " csn swim";
+    }
+
+    @Override
+    public void deleteUser(String id) {
+        userRepo.deleteById(id);
+    }
+    @Override
+    public String iDunTire(String id){
+        return id + " iDunTire";
+    }
+
+
+
+
+
 }
