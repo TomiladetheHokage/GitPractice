@@ -12,4 +12,5 @@ public interface UserService {
 
     void deleteUser (String id);
 
+    String iDunTire(String id);
 }
