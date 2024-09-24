@@ -27,4 +27,10 @@ public class UserServiceImplementation implements UserService {
 
         return usernmae;
     }
+
+    @Override
+    public String dance(String name){
+        return name + "is dance";
+    }
+
 }
