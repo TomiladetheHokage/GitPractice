@@ -17,4 +17,14 @@ public class UserServiceImplementation implements UserService {
         userRepo.save(user);
         return user;
     }
+
+    @Override
+    public String login(String usernmae, String password) {
+        User user = new User();
+        if(usernmae.equals(user.getName()) && password.equals(user.getPassword())){
+            return "login";
+        }
+
+        return usernmae;
+    }
 }
