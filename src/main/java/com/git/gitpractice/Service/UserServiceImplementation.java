@@ -29,6 +29,7 @@ public class UserServiceImplementation implements UserService {
     }
 
     @Override
+
     public String dance(String name){
         return name + "is dance";
     }
@@ -36,5 +37,14 @@ public class UserServiceImplementation implements UserService {
     public String swim(String name){
         return name + " csn swim";
     }
+
+    @Override
+    public void deleteUser(String id) {
+        userRepo.deleteById(id);
+    }
+
+
+
+
 
 }
