@@ -28,6 +28,14 @@ public class UserServiceImplementation implements UserService {
         return usernmae;
     }
 
+
+
+    public String login2(String usernmae, String password) {
+        User user = new User();
+        if(usernmae.equals(user.getName()) && password.equals(user.getPassword()))return "u logged in sha";
+        return usernmae;
+    }
+
     @Override
 
     public String dance(String name){
@@ -46,6 +54,7 @@ public class UserServiceImplementation implements UserService {
     public String iDunTire(String id){
         return id + " iDunTire";
     }
+
 
 
 
